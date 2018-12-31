@@ -4,7 +4,7 @@
 
 using System;
 
-namespace GangOfFour.Structural
+namespace GangOfFour.Creational
 {
     class Singleton
     {
