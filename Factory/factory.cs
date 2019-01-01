@@ -72,12 +72,13 @@ namespace GangOfFour.Creational
         }
     }
 
+    #if (FACTORY == true) && (ABSTRACT_FACTORY == false)
     class MainProgram
     {
         static void Main(string[] args)
         {
             Console.Write("Which Profile would you like to create - LinkedIn or Facebook?\n>> ");
-            string profile_type = Console.ReadLine();
+            string profile_type = args[0];
 
             Profile profile;
             if (profile_type == "Facebook")
@@ -93,7 +94,7 @@ namespace GangOfFour.Creational
                 throw new InvalidOperationException();
             }
 
-            Console.WriteLine("Creating Profile...");
+            Console.WriteLine($"Creating {profile_type} Profile...");
             Console.WriteLine("Profile has sections --");
             foreach (ISection section in profile.Sections)
             {
@@ -102,4 +103,5 @@ namespace GangOfFour.Creational
             }
         }
     }
+    #endif
 }
