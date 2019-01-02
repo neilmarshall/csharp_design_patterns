@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace GangOfFour.Creational
 {
@@ -29,21 +30,15 @@ namespace GangOfFour.Creational
 
     public abstract class Profile
     {
-        public ISection[] Sections { get; private set; }
+        protected Profile() => CreateProfile();
+
+        public List<ISection> Sections { get; private set; }
 
         protected void AddSections(ISection section)
         {
             if (Sections == null)
-            {
-                Sections = new ISection[1] { section };
-            }
-            else
-            {
-                ISection[] newSections = new ISection[Sections.Length + 1];
-                Sections.CopyTo(newSections, 0);
-                newSections[newSections.Length - 1] = section;
-                Sections = newSections;
-            }
+                Sections = new List<ISection>();
+            Sections.Add(section);
         }
 
         protected abstract void CreateProfile();
@@ -51,8 +46,6 @@ namespace GangOfFour.Creational
 
     public class Facebook : Profile
     {
-        public Facebook() => CreateProfile();
-
         protected override void CreateProfile()
         {
             AddSections(new PersonalSection());
@@ -62,8 +55,6 @@ namespace GangOfFour.Creational
 
     public class LinkedIn : Profile
     {
-        public LinkedIn() => CreateProfile();
-
         protected override void CreateProfile()
         {
             AddSections(new PersonalSection());
