@@ -5,4 +5,11 @@
     <TargetFramework>netcoreapp2.1</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Compile Remove="OrderParser.cs" />
+    <Compile Remove="MainTest.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\OrderParser\OrderParser.fsproj" />
+  </ItemGroup>
 </Project>
