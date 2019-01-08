@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Factory", "Factory\Factory.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Observer", "Observer\Observer.csproj", "{4E114CD8-72BF-4500-AB7E-08A850F49C9C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Decorator", "Decorator\Decorator.csproj", "{DEE2FCA5-DA56-4E6E-ADB2-EACA1CE72802}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -26,7 +28,9 @@ Global
 		{4E114CD8-72BF-4500-AB7E-08A850F49C9C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4E114CD8-72BF-4500-AB7E-08A850F49C9C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4E114CD8-72BF-4500-AB7E-08A850F49C9C}.Release|Any CPU.Build.0 = Release|Any CPU
-		{4E114CD8-72BF-4500-AB7E-08A850F49C9C}.Debug_Factory|Any CPU.ActiveCfg = Debug|Any CPU
-		{4E114CD8-72BF-4500-AB7E-08A850F49C9C}.Debug_Factory|Any CPU.Build.0 = Debug|Any CPU
+		{DEE2FCA5-DA56-4E6E-ADB2-EACA1CE72802}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DEE2FCA5-DA56-4E6E-ADB2-EACA1CE72802}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DEE2FCA5-DA56-4E6E-ADB2-EACA1CE72802}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DEE2FCA5-DA56-4E6E-ADB2-EACA1CE72802}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

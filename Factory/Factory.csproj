@@ -6,9 +6,10 @@
   </PropertyGroup>
 
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <DefineConstants>TRACE;DEBUG;NETCOREAPP;NETCOREAPP2_1;ABSTRACT_FACTORY</DefineConstants>
+    <DefineConstants>TRACE;ABSTRACT_FACTORY;DEBUG;NETCOREAPP;NETCOREAPP2_1</DefineConstants>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType></DebugType>
+    <DefineConstants>TRACE;RELEASE;NETCOREAPP;NETCOREAPP2_1;FACTORY</DefineConstants>
   </PropertyGroup>
 </Project>

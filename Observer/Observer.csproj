@@ -7,10 +7,12 @@
 
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <WarningLevel>4</WarningLevel>
-    <DefineConstants>TRACE;DEBUG;NETCOREAPP;NETCOREAPP2_1;PULL</DefineConstants>
+    <DefineConstants>TRACE;PULL;DEBUG;NETCOREAPP;NETCOREAPP2_1</DefineConstants>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <NoStdLib>true</NoStdLib>
     <NoStdLib>true</NoStdLib>
+    <DebugType></DebugType>
+    <DefineConstants>TRACE;RELEASE;NETCOREAPP;NETCOREAPP2_1;PULL</DefineConstants>
   </PropertyGroup>
 </Project>
